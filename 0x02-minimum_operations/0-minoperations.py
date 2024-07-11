@@ -8,12 +8,12 @@ def minOperations(n):
     operations copy all and past only."""
     if n < 2:
         return 0
-    
+
     ops, divs = 0, 2
     for divs in range(2, n + 1):
         while n % divs == 0:
             ops += divs
             n //= divs
         divs -= 1
-    
+
     return ops
