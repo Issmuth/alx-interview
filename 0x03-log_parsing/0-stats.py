@@ -2,12 +2,14 @@
 """Script that reads stdin and formats the strings."""
 import sys
 
+
 def print_stats(sc, f_size):
     """Prints the status of the log."""
     print("File size: {}".format(f_size))
     for k, v in sorted(sc.items()):
         if v != 0:
             print("{}: {}".format(k, v))
+
 
 f_size = 0
 count = 0
