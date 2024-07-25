@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Module for UTF-8 Validation """
 
+
 def is_valid_utf8(data):
     """
     Determines if a given data set represents a valid UTF-8 encoding.
