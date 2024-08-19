@@ -13,7 +13,7 @@ def makeChange(coins, total):
     while total > 0 and i >= 0:
         if total % coins[i] == 0:
             return int((total / coins[i]) + coinsCount)
-        
+
         total -= coins[i]
         coinsCount += 1
 
@@ -22,5 +22,5 @@ def makeChange(coins, total):
 
     if total < 0:
         return -1
-    
+
     return int(coinsCount)
