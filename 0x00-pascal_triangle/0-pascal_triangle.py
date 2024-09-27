@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Pascal Triangle Representaion."""
 
+
 def pascal_triangle(n):
-    triangle = [[1],[1,1]]
+    """Returns the pascal triangle."""
+    triangle = [[1], [1, 1]]
 
     if n <= 0:
         return []
