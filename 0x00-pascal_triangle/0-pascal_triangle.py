@@ -6,14 +6,21 @@ def pascal_triangle(n):
 
     if n <= 0:
         return []
-    
+
     if n == 1:
         return [[1]]
-    
+
     if n == 2:
         return triangle
 
-    if n % 2 != 0:
-        d6t
+    for i in range(n - 2):
+        row = []
+        prev = triangle[-1]
+        row.append(1)
+        for i in range(len(prev)):
+            if i + 1 < len(prev):
+                row.append(prev[i] + prev[i + 1])
+        row.append(1)
+        triangle.append(row)
 
-    
+    return triangle
