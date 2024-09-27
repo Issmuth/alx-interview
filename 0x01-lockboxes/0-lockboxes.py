@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
     boxes[0].append(-1)
 
     i = 0
-    while i < keyNum:
+    while i < keyNum and keys[i] < boxNum:
         if keys[i] == -1 and keys[i] >= boxNum:
             continue
 
