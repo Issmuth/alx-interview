@@ -2,7 +2,7 @@
 """Prime Game - Maria and Ben's game implementation"""
 
 
-def determine_winner(rounds, numbers):
+def isWinner(rounds, numbers):
     """
     Determines the winner after a series of rounds.
 
