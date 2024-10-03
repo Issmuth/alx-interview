@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """Prime Game - Maria and Ben's game implementation"""
 
+
 def determine_winner(rounds, numbers):
     """
     Determines the winner after a series of rounds.
-    
+
     rounds: Number of rounds to play
     numbers: List of maximum numbers for each round
     """
@@ -39,7 +40,7 @@ def determine_winner(rounds, numbers):
 def mark_non_primes(prime_flags, prime):
     """
     Marks the multiples of a prime number as non-prime.
-    
+
     prime_flags: List indicating whether numbers are prime
     prime: The prime number whose multiples need to be marked
     """
