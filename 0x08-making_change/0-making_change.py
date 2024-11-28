@@ -8,7 +8,7 @@ def makeChange(coins, total):
     of coins needed for change."""
     coinsCount = 0
     
-    if total == 0:
+    if total <= 0:
         return 0
 
     coins.sort()
