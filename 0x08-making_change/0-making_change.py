@@ -7,7 +7,7 @@ def makeChange(coins, total):
     """returns the least number
     of coins needed for change."""
     coinsCount = 0
-    
+ 
     if total <= 0:
         return 0
 
@@ -20,7 +20,7 @@ def makeChange(coins, total):
             total = total % coins[i]
 
         i -= 1
-    
+ 
     if total == 0:
         return coinsCount
     else:
